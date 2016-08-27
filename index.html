@@ -1,29 +1,23 @@
 <html>
 <head>
-	<link rel="stylesheet" href="css/tab-panel.css">
+	<link rel="stylesheet" href="css/fox-tab-panel.css">
 
 	<script src="http://code.jquery.com/jquery-2.2.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 
-	<script src="js/tab-panel.js"></script>
+	<script src="js/fox-tab-panel.js"></script>
 </head>
-<body>
-	<div class="tab-panel">
-		<div class="tab-nav">
-			<div class="tab-button active">One</div>
-			<div class="tab-button">Two</div>
-			<div class="tab-button">Three</div>
-		</div>
-		<div class="tab-content">
-			<div class="tab active">
-				Tab number one!
-			</div>
-			<div class="tab">
-				Tab number two!!
-			</div>
-			<div class="tab">
-				Tab number three!!! ha ha ha
-			</div>
-		</div>
-	</div>
+<body ng-app="FoxTabPanelDirective">
+	<fox-tab-panel active-tab-index="0">
+		<fox-tab title="One">
+			Tab number one!
+		</fox-tab>
+		<fox-tab title="Two">
+			Tab number two!!
+		</fox-tab>
+		<fox-tab title="Three">
+			Tab number three!!! ha ha ha
+		</fox-tab>
+	</fox-tab-panel>
 </body>
 </html>
