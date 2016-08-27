@@ -5,4 +5,4 @@ This is more or less a playground for me to try out different JavaScript framewo
 'master' is vanilla JS and there is a branch for each of the following frameworks:
 
  * jQuery
- * AngularJs
+ * AngularJS
